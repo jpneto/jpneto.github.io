@@ -1,34 +1,280 @@
-<html>
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <!-- page design based on https://www.dabeaz.com/index.html -->
+    <title>João Neto's Projects</title>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 
-<head>
-<meta http-equiv="Content-Language" content="pt">
-<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
-<link rel="stylesheet" href="style.css">
-<title>Welcome page</title>
-</head>
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta/css/bootstrap.min.css" integrity="sha384-/Y6pD6FV/Vv2HJnA6t+vslU6fwYXjCFtcEpHbNJ0lyAFsXTsjBbfaDjzALeQsN6M" crossorigin="anonymous">
 
-<body>
-<header> <a href="http://www.di.fc.ul.pt/~jpn/" target="_blank">home</a> 
-       | <a href="mailto:jpneto@fc.ul.pt">email</a> 
-       | <a href="https://github.com/jpneto"    target="_blank">github</a> 
-</header>
+<style type="text/css">
+# a {text-decoration: none; }
+# a.nav {color: #00ffff; }
 
-<h3>João Pedro Neto's Repositories</h3>
+.talk {
+    clear: both;
+    margin-bottom: 2em;
+}
 
-<table>
-  <tr>
-    <th>R Notebooks about Probability, Statistics, and ML</th>
-    <th><a href="https://github.com/jpneto/Markdowns" target="_blank">
-          <img src="imgs/rep.png" alt="repository" style="width:10px;height:15px;">
-        </a></th>
-  </tr><tr>
-    <th>Topics in Python about Programming, Statistics, and Math</th>
-    <th><a href="https://github.com/jpneto/topicsInPython" target="_blank">
-          <img src="imgs/rep.png" alt="repository" style="width:10px;height:15px;">
-        </a></th>
-  </tr>
-</table>
+.talk h2 {
+    line-height: 1.2;
+}
 
-</body>
+.talk h3 {
+    line-height: 1.2;
+}
 
+.talk h4 {
+    line-height: 1.2;
+}
+
+.talk img {
+   display: block;
+   margin: 0 auto;
+   max-width: 90%;
+#   width: 240pt;
+#   width: 30%;
+   border: 2px solid black;
+   box-shadow: 0.4em 0.5em 0.4em #888;
+}
+
+.course img {
+   display: block;
+   margin: 0 auto;
+   max-width: 90%;
+}
+
+.coursepage img {
+   display: block;
+   max-width: 90%;
+}
+
+@media (max-width: 480pt) {
+    .talk:before {
+        display: block;
+        margin: 1em auto;
+        text-align: center;
+        content: "<->";
+    }
+    .talk img {
+        margin: 15pt;
+    }
+    .coursepage img {
+        margin: 15pt;
+    }
+}
+
+@media (min-width: 480pt) {
+    body {
+        padding-left: 2.5em;
+        padding-right: 2.5em;
+    }
+    .talk img {
+        float: left;
+        max-width: 166pt;
+    }
+    .talk h2, .talk p, .talk h3, .talk h4 {
+        padding-left: 192pt;
+    }
+    .coursepage img {
+        max-width: 50%;
+        float: left;
+    }
+}
+
+</style>
+
+  </head>
+  <body>
+
+<nav class="navbar navbar-expand-lg navbar-light bg-light">
+  <a class="navbar-brand" href="index.html">jpneto</a>
+  <a href="mailto:jpneto@fc.ul.pt" aria-label="Contact">✉️</a>
+   
+  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+    <span class="navbar-toggler-icon"></span>
+  </button>
+
+  <div class="collapse navbar-collapse" id="navbarSupportedContent">
+    <ul class="navbar-nav mr-auto">
+
+      <li class="nav-item dropdown">
+        <a class="nav-link dropdown-toggle" data-toggle="dropdown" href="#" role="button" aria-haspopup="true" aria-expanded="false">Courses</a>
+        <div class="dropdown-menu">
+          <a class="dropdown-item" target="_blank" 
+             href="https://www.youtube.com/playlist?list=PLCHNW0BiVLOnH0nrH0iiq7_8YdGmDbnVh">Programação I [Python] 🇵🇹</a>
+          <a class="dropdown-item" target="_blank" 
+             href="https://www.youtube.com/playlist?list=PLCHNW0BiVLOnfJ9za0-s7SqMnQZvD5gZL">Algoritmos e Estruturas de Dados [Java] 🇵🇹</a>
+          <a class="dropdown-item" target="_blank" 
+             href="https://www.youtube.com/playlist?list=PLCHNW0BiVLOnLDMAL4BUsCYd-EmznnB2u">Verificação e Validação de Software [Java] 🇵🇹</a>
+          <a class="dropdown-item" target="_blank" 
+             href=""></a>
+        </div>
+      </li>
+
+      <li class="nav-item dropdown">
+        <a class="nav-link dropdown-toggle" data-toggle="dropdown" href="#" role="button" aria-haspopup="true" aria-expanded="false">Software</a>
+        <div class="dropdown-menu">
+          <a class="dropdown-item" target="_blank" 
+             href="http://htmlpreview.github.io/?https://github.com/jpneto/ScoringGames/blob/master/README.html">Algebra for Guaranteed Scoring CGT</a>
+          <a class="dropdown-item" target="_blank"
+             href="https://github.com/jpneto/yocto/wiki">yöctọ [code golf language]</a>
+          <a class="dropdown-item" target="_blank"
+             href="http://www.di.fc.ul.pt/~jpn/lattice/index.html">Lattice Maker</a>
+          <a class="dropdown-item" target="_blank"
+             href="http://www.di.fc.ul.pt/~jpn/ludae/index.htm">LUDAE application</a>
+          <a class="dropdown-item" target="_blank" 
+             href="http://www.di.fc.ul.pt/~jpn/netdef/index.htm">Symbolic Neural Networks [Ph.D work]</a>
+        </div>
+      </li>
+      
+      <li class="nav-item dropdown">
+        <a class="nav-link dropdown-toggle" data-toggle="dropdown" href="#" role="button" aria-haspopup="true" aria-expanded="false">Projects</a>
+        <div class="dropdown-menu">
+          <a class="dropdown-item" target="_blank" 
+             href="http://www.di.fc.ul.pt/~jpn/gv/projects.htm">Portuguese Championship of Math Games</a>
+          <a class="dropdown-item" target="_blank" 
+             href="https://sagme.blogspot.com/">Trabsact Sagme Diaries </a>
+          <a class="dropdown-item" target="_blank" 
+             href="http://www.di.fc.ul.pt/~jpn/gv/projects.htm">World of Abstract Games</a>
+          <a class="dropdown-item" target="_blank" 
+             href="http://www.di.fc.ul.pt/~jpn/cv/index.htm">Chess Variants</a>
+        </div>
+      </li>
+      
+      <li class="nav-item dropdown">
+        <a class="nav-link dropdown-toggle" data-toggle="dropdown" href="#" role="button" aria-haspopup="true" aria-expanded="false">Social</a>
+        <div class="dropdown-menu">
+          <a class="dropdown-item" target="_blank" 
+             href="https://stats.stackexchange.com/users/37322/jpneto">Stack Overflow</a>
+          <a class="dropdown-item" target="_blank" 
+             href="https://github.com/jpneto">GitHub</a>
+          <a class="dropdown-item" target="_blank" 
+             href="https://sonhoslx.blogspot.com/">Blog</a>
+          <a class="dropdown-item" target="_blank" 
+             href="https://www.twitter.com/jpnto">Twitter</a>
+          <a class="dropdown-item" target="_blank" 
+             href="http://www.linkedin.com/pub/jo%C3%A3o-neto/2/184/812">LinkedIn</a>
+          <a class="dropdown-item" target="_blank" 
+             href="https://scholar.google.pt/citations?user=UpPrybYAAAAJ">Google Scholar</a>
+          <a class="dropdown-item" target="_blank" 
+             href="http://www.di.fc.ul.pt/~jpn/public/">Web of Beliefs</a>
+             
+             
+        </div>
+      </li>
+
+      <li class="nav-item">
+	    <a class="nav-link" href="https://ciencias.ulisboa.pt/pt/perfil/jpneto" target="_blank">Work 🇵🇹</a>
+      </li>
+      
+      <li class="nav-item">
+        <a class="nav-link" href="https://about.me/jpn" target="_blank">About</a>
+      </li>
+      
+    </ul>
+
+  </div>
+</nav>
+
+<div class="container">
+
+<h3>short bio</h3>
+
+<div class="talk">
+     <a name="headshot">
+     <img width="125"  src="https://avatars.githubusercontent.com/u/886455?s=400&u=d1088f2505f4de23c47ab5deafb0ab505e249588&v=4"></a>
+
+<p>Professor of Computer Science at the University of Lisbon. My professional interests, besides teaching, are focused on Programming, Bayesian Statistics, Combinatorial Game Theory.
+
+Hobbies include learning, programming, seeing movies, playing abstract games, reading.
+
+Favorite areas of thought: Math, Science, Ethics, Epistemology, History.
+
+<br>Coding events: 
+    <font face="Courier New" size="2">
+	  <span style="background-color: #000000"><font color="#FFFF00">Advent of Code 367*</font></span>; 
+      Project Euler: 177 solved (percentile 99.6)
+    </font>
+</p>        
+</div>
+
+<hr>
+
+<h3>Books</h3>
+
+<div class="talk">
+  <a> <img height="175"  src="http://www.di.fc.ul.pt/~jpn/pic/jmja.jpg"> </a>
+  <a> <img height="175"  src="http://www.di.fc.ul.pt/~jpn/pic/hdf.jpg"> </a>
+  <a> <img height="175"  src="http://www.di.fc.ul.pt/~jpn/pic/jvrn.jpg"> </a>
+  <a href="https://www.amazon.com/Mathematical-Games-Abstract-Joao-Pedro/dp/0486499901" target="_blank"> 
+    <img height="175"  src="http://www.di.fc.ul.pt/~jpn/pic/dover.jpg"> 
+  </a>
+  <a> <img height="175"  src="http://www.di.fc.ul.pt/~jpn/pic/paed.jpg"> </a>
+  <a> <img height="175"  src="http://www.di.fc.ul.pt/~jpn/pic/tc.jpg"> </a>
+</div>
+
+<div class="talk"></div>
+
+<hr> 
+
+<div class="talk">
+  <a name="topics" target="_blank" href="https://github.com/jpneto/topicsInPython">
+    <img height="125" src="imgs/python-1024.webp">
+  </a>
+  <h4>Topics in Python</h4>
+  <p>Jupyter <a target="_blank" target="_blank" href="https://github.com/jpneto/topicsInPython">notebooks</a> that range from Statistics and Mathematics to Programming, including:</p>
+  
+  <p><a target="_blank" href="https://colab.research.google.com/github/jpneto/topicsInPython/blob/main/notebooks/Resampling.ipynb">
+Resampling</a> - notes about permutation tests to estimate answers to probability problems and propose alternatives to several statistical tests.</p>
+
+  <p><a target="_blank" href="https://colab.research.google.com/github/jpneto/topicsInPython/blob/main/notebooks/Optimization.ipynb">Optimization</a> - brief notes about convex optimization and how to apply it with Python </p>
+
+  <p><a target="_blank" href="https://colab.research.google.com/github/jpneto/topicsInPython/blob/main/notebooks/ConcatenativeProgramming.ipynb">Concatenative Programming</a> - introduction to tacit programming and concatenative programming using Python high-order functions.</p>
+
+  <p><a target="_blank" href="https://colab.research.google.com/github/jpneto/topicsInPython/blob/main/notebooks/Corecursion.ipynb">Corecursion</a>  - introduction to codata and corecursion, and how to use it in Python</p>
+
+  <p><a target="_blank" href="https://colab.research.google.com/github/jpneto/topicsInPython/blob/main/notebooks/Functors_and_Monads.ipynb">Functors & Monads</a> - show implementations and use cases of Functors, Applicative Functors and Monads as Python interfaces.</p>
+
+  <p><a target="_blank" href="https://colab.research.google.com/github/jpneto/topicsInPython/blob/main/notebooks/ProbabilisticProgramming.ipynb">Probabilistic Programming</a> - introduction to probabilistic programming</p>
+
+  <p><a target="_blank" href="https://colab.research.google.com/github/jpneto/topicsInPython/blob/main/notebooks/Differentiation.ipynb">Differentiation</a> - computing derivatives via symbolic differentiation, numerical differentiation and automatic differentiation.</p>
+
+</div>
+
+<hr> 
+
+<div class="talk">
+  <a name="topics" target="_blank" href="http://www.di.fc.ul.pt/~jpn/r/">
+    <img height="125" width="125"  src="imgs/R_logo.svg">
+  </a>
+  <h4>Topics in R</h4>
+  <p>R <a target="_blank" href="http://www.di.fc.ul.pt/~jpn/r/">markdowns</a> dealing with lots of concepts from R itself, Bayesian Statistics & Machine Learning, including:
+     <a target="_blank" href="http://www.di.fc.ul.pt/~jpn/r/combinatorics/combinatorics.html">Combinatorics</a>, 
+     <a target="_blank" href="http://www.di.fc.ul.pt/~jpn/r/fourier/fourier.html">Fourier Transform</a>,
+     <a target="_blank" href="http://www.di.fc.ul.pt/~jpn/r/maxent/maxent.html">Maximum Entropy</a>,
+     <a target="_blank" href="http://www.di.fc.ul.pt/~jpn/r/powerlaw/powerlaw.html">Power Laws</a>,
+     <a target="_blank" href="http://www.di.fc.ul.pt/~jpn/r/noise/noise.html">Noise</a>,
+     <a target="_blank" href="http://www.di.fc.ul.pt/~jpn/r/distributions/index.html">Distributions</a>,
+     <a target="_blank" href="http://www.di.fc.ul.pt/~jpn/r/abc/index.html">Approximate Bayesian Computation</a>,
+     <a target="_blank" href="http://www.di.fc.ul.pt/~jpn/r/bugs/bugs_tutorial.html">A BUGS tutorial</a>,
+     <a target="_blank" href="http://www.di.fc.ul.pt/~jpn/r/optimization/CVXR.html">Convex Optimization using CVXR</a>,
+     <a target="_blank" href="http://www.di.fc.ul.pt/~jpn/r/fat_tails/heavy_tails.html">Heavy Tails</a>,
+     <a target="_blank" href="http://www.di.fc.ul.pt/~jpn/r/decision/index.html">Bayesian Decision Theory</a>,
+     <a target="_blank" href="http://www.di.fc.ul.pt/~jpn/r/circular/index.html">Circular Statistics</a>,
+     <a target="_blank" href="http://www.di.fc.ul.pt/~jpn/r/EM/EM.html">Expectation-Maximization</a>,
+     <a target="_blank" href="http://www.di.fc.ul.pt/~jpn/r/PRML/chapter4.4.html">Laplace Approximation</a>,
+     <a target="_blank" href="http://www.di.fc.ul.pt/~jpn/r/ECS/index.html">Statistical Computation and Simulation</a>,
+     <a target="_blank" href="http://www.di.fc.ul.pt/~jpn/r/variational_inference/variational.html">Variational Inference</a>
+</div>
+
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.11.0/umd/popper.min.js" integrity="sha384-b/U6ypiBEHpOf/4+1nzFpr53nxSS+GLCkfwBdFNTxtclqqenISfwAzpKaMNFNmj4" crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta/js/bootstrap.min.js" integrity="sha384-h0AbiXch4ZDo7tp9hKZ4TsHbi047NrKGLO3SEJAg45jXxnGIfYzk4Si90RDIqNm1" crossorigin="anonymous"></script>
+  </body>
 </html>
