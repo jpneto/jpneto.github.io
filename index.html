@@ -8,42 +8,30 @@
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 
     <!-- Bootstrap CSS -->
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta/css/bootstrap.min.css" integrity="sha384-/Y6pD6FV/Vv2HJnA6t+vslU6fwYXjCFtcEpHbNJ0lyAFsXTsjBbfaDjzALeQsN6M" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta/css/bootstrap.min.css">
 
 <style type="text/css">
-.talk {
+.entry {
     clear: both;
     margin-bottom: 2em;
 }
 
-.talk h2 {
-    line-height: 1.2;
-}
-
-.talk h3 {
-    line-height: 1.2;
-}
-
-.talk h4 {
-    line-height: 1.2;
-}
-
-.talk img {
+.entry img {
    display: block;
    margin: 0 auto;
    max-width: 90%;
-   border: 1px solid black;
-   box-shadow: 0.4em 0.4em 0.4em #ccc;
+   border: 0px solid black;
+   box-shadow: 0.4em 0.4em 0.4em #eee;
 }
 
 @media (max-width: 480pt) {
-    .talk:before {
+    .entry:before {
         display: block;
         margin: 1em auto;
         text-align: center;
         content: "<->";
     }
-    .talk img {
+    .entry img {
         margin: 15pt;
     }
 }
@@ -53,11 +41,11 @@
         padding-left: 1.5em;
         padding-right: 1.5em;
     }
-    .talk img {
+    .entry img {
         float: left;
         max-width: 128pt;
     }
-    .talk h2, .talk p, .talk h3, .talk h4 {
+    .entry h2, .entry p, .entry h3, .entry h4 {
         padding-left: 128pt;
     }
 }
@@ -67,8 +55,8 @@
   </head>
   <body>
 
-<nav class="navbar navbar-expand-lg navbar-light bg-light "> 
-  <a class="navbar-brand" href="index.html">jpneto</a>
+<nav class="navbar sticky-top navbar-expand-sm navbar-light bg-white"> 
+  <!--<a class="navbar-brand" href="index.html">jpneto</a>-->
   <a href="mailto:jpneto@fc.ul.pt" aria-label="Contact">✉️</a>
    
   <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
@@ -77,6 +65,7 @@
 
   <div class="collapse navbar-collapse" id="navbarSupportedContent">
     <ul class="navbar-nav mr-auto">
+      <!--
       <li class="nav-item dropdown">
         <a class="nav-link dropdown-toggle" data-toggle="dropdown" href="#" role="button" aria-haspopup="true" aria-expanded="false">Courses</a>
         <div class="dropdown-menu">
@@ -90,6 +79,7 @@
              href=""></a>
         </div>
       </li>
+      -->
 
       <li class="nav-item">
 	    <a class="nav-link" href="https://ciencias.ulisboa.pt/pt/perfil/jpneto" target="_blank">Work 🇵🇹</a>
@@ -156,9 +146,9 @@
 
 <div class="container">
 
-<h3>short bio</h3>
+<!--<h3>short bio</h3>-->
 
-<div class="talk">
+<div class="entry">
      <a name="headshot">
      <img width="125"  src="https://avatars.githubusercontent.com/u/886455?s=400&u=d1088f2505f4de23c47ab5deafb0ab505e249588&v=4"></a>
 
@@ -166,12 +156,12 @@
 
 Hobbies include learning, programming, seeing movies, playing abstract games, reading.
 
-Favorite areas of thought: Mathematics, Probability, Computation, Epistemology, Ecology, History, Ethics.
+Favorite areas of thought: Probability, Computation, Epistemology, Ecology, History, Ethics.
 
-<br>Coding events: 
-    <font face="Courier New" size="2">
+<br>Coding chops: 
+    <font face="Courier New" size="3">
 	  <span style="background-color: #000000"><font color="#FFFF00">Advent of Code 367*</font></span>; 
-      Project Euler: 177 solved (percentile 99.6)
+      177 Solved @ Project Euler (perc. 99.6)
     </font>
 </p>        
 </div>
@@ -180,7 +170,7 @@ Favorite areas of thought: Mathematics, Probability, Computation, Epistemology, 
 
 <h3>Books</h3>
 
-<div class="talk">
+<div class="entry">
   <a> <img height="175"  src="http://www.di.fc.ul.pt/~jpn/pic/jmja.jpg"> </a>
   <a> <img height="175"  src="http://www.di.fc.ul.pt/~jpn/pic/hdf.jpg"> </a>
   <a> <img height="175"  src="http://www.di.fc.ul.pt/~jpn/pic/jvrn.jpg"> </a>
@@ -191,14 +181,14 @@ Favorite areas of thought: Mathematics, Probability, Computation, Epistemology, 
   <a> <img height="175"  src="http://www.di.fc.ul.pt/~jpn/pic/tc.jpg"> </a>
 </div>
 
-<div class="talk"></div>
+<div class="entry"></div>
 
 <hr> 
 
-<div class="talk">
-  <a name="topics" target="_blank" href="https://github.com/jpneto/topicsInPython">
+<div class="entry">
+  <!--<a name="topics" target="_blank" href="https://github.com/jpneto/topicsInPython">
     <img height="125" src="imgs/python-1024.webp">
-  </a>
+  </a>-->
   <h4>Topics in Python</h4>
   <p>Jupyter <a target="_blank" target="_blank" href="https://github.com/jpneto/topicsInPython">notebooks</a> that range from Statistics and Mathematics to Programming, including:</p>
   
@@ -221,10 +211,10 @@ Resampling</a> - notes about permutation tests to estimate answers to probabilit
 
 <hr> 
 
-<div class="talk">
-  <a name="topics" target="_blank" href="http://www.di.fc.ul.pt/~jpn/r/">
+<div class="entry">
+  <!--<a name="topics" target="_blank" href="http://www.di.fc.ul.pt/~jpn/r/">
     <img height="125" width="125"  src="imgs/R_logo.svg">
-  </a>
+  </a>-->
   <h4>Topics in R</h4>
   <p>R <a target="_blank" href="http://www.di.fc.ul.pt/~jpn/r/">markdowns</a> dealing with lots of concepts from R itself, Bayesian Statistics & Machine Learning, including:
      <a target="_blank" href="http://www.di.fc.ul.pt/~jpn/r/combinatorics/combinatorics.html">Combinatorics</a>, 
@@ -245,10 +235,14 @@ Resampling</a> - notes about permutation tests to estimate answers to probabilit
      <a target="_blank" href="http://www.di.fc.ul.pt/~jpn/r/variational_inference/variational.html">Variational Inference</a>
 </div>
 
+<hr> 
+
+<div class="entry"><br></div>
+
     <!-- Optional JavaScript -->
     <!-- jQuery first, then Popper.js, then Bootstrap JS -->
-    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.11.0/umd/popper.min.js" integrity="sha384-b/U6ypiBEHpOf/4+1nzFpr53nxSS+GLCkfwBdFNTxtclqqenISfwAzpKaMNFNmj4" crossorigin="anonymous"></script>
-    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta/js/bootstrap.min.js" integrity="sha384-h0AbiXch4ZDo7tp9hKZ4TsHbi047NrKGLO3SEJAg45jXxnGIfYzk4Si90RDIqNm1" crossorigin="anonymous"></script>
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.11.0/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta/js/bootstrap.min.js"></script>
   </body>
 </html>
