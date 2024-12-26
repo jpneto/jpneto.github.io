@@ -11,50 +11,57 @@
     <!-- Bootstrap CSS -->
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta/css/bootstrap.min.css">
 
-<style type="text/css">
-.entry {
-    clear: both;
-    margin-bottom: 2em;
-}
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.11.0/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta/js/bootstrap.min.js"></script>
+    
 
-.entry img {
-   display: block;
-   margin: 0 auto;
-   max-width: 90%;
-   border: 0px solid black;
-   box-shadow: 0.4em 0.4em 0.4em #eee;
-}
-
-@media (max-width: 480pt) {
-    .entry:before {
-        display: block;
-        margin: 1em auto;
-        text-align: center;
-        content: "<->";
+    <style type="text/css">
+    .entry {
+        clear: both;
+        margin-bottom: 2em;
     }
+
     .entry img {
-        margin: 15pt;
+       display: block;
+       margin: 0 auto;
+       max-width: 90%;
+       border: 0px solid black;
+       box-shadow: 0.4em 0.4em 0.4em #eee;
     }
-}
 
-@media (min-width: 480pt) {
-    body {
-        padding-left: 1.5em;
-        padding-right: 1.5em;
+    @media (max-width: 480pt) {
+        .entry:before {
+            display: block;
+            margin: 1em auto;
+            text-align: center;
+            content: "<->";
+        }
+        .entry img {
+            margin: 15pt;
+        }
     }
-    .entry img {
-        float: left;
-        max-width: 128pt;
-    }
-    .entry h2, .entry p, .entry h3, .entry h4 {
-        padding-left: 128pt;
-    }
-}
 
-</style>
+    @media (min-width: 480pt) {
+        body {
+            padding-left: 1.5em;
+            padding-right: 1.5em;
+        }
+        .entry img {
+            float: left;
+            max-width: 128pt;
+        }
+        .entry h2, .entry p, .entry h3, .entry h4 {
+            padding-left: 128pt;
+        }
+    }
+    </style>
 
-  </head>
-  <body>
+</head>
+
+<body>
 
 <nav class="navbar sticky-top navbar-expand-sm navbar-light bg-white"> 
   <!--<a class="navbar-brand" href="index.html">jpneto</a>-->
@@ -206,37 +213,26 @@
              href="web.html">Web of Beliefs</a>
         </div>
       </li>
-
-
     </ul>
-
   </div>
 </nav>
 
 <div class="container">
 
-<!--<h3>short bio</h3>-->
-
 <div class="entry">
      <a name="headshot">
-     <img width="125"  src="https://avatars.githubusercontent.com/u/886455?s=400&u=d1088f2505f4de23c47ab5deafb0ab505e249588&v=4"></a>
+       <img width="125"  src="https://avatars.githubusercontent.com/u/886455?s=400&u=d1088f2505f4de23c47ab5deafb0ab505e249588&v=4"></a>
 
-<p>Professor of Computer Science at the University of Lisbon. My professional interests, besides teaching, are focused on programming languages, Bayesian statistics, machine learning, and combinatorial game theory.
-
-Main hobbies: programming, seeing movies, playing abstract games, and reading.
-
-Favorite areas of thought: Computation, Probability, Ecology, Ethics, Epistemology, History.
-
-<br>
-
-Coding chops: 
-<font face="Courier New" size="3">
-  <span style="background-color: #000000"><font color="#FFFF00">Advent of Code 485*</font></span>
-  <span style="background-color: #f0f0f0"><b><font color="#6b4e3d">Project Euler 177</font></b></span>
-  <!-- <font size="-1" color="#6b4e3d">[99.6%]</font> -->
-  <span style="background-color: #90EE90"><b>Leetcode 410<font size="-1"> (118/227/65)</font></b></span>
-</font>
-</p>        
+    <p>Professor of Computer Science at the University of Lisbon. My professional interests, besides teaching, are focused on programming languages, Bayesian statistics, machine learning, and combinatorial game theory.
+    <br>Main hobbies: programming, seeing movies, playing abstract games, and reading.
+    <br>Favorite areas of thought: Computation, Probability, Ecology, Ethics, Epistemology, History.
+    <br>Coding chops: 
+    <font face="Courier New" size="3">
+      <span style="background-color: #000000"><font color="#FFFF00">Advent of Code 485*</font></span>
+      <span style="background-color: #f0f0f0"><b><font color="#6b4e3d">Project Euler 177</font></b></span>
+      <span style="background-color: #90EE90"><b>Leetcode 410<font size="-1"> (118/227/65)</font></b></span>
+    </font>
+    </p>        
 </div>
 
 <hr>
@@ -246,8 +242,7 @@ Coding chops:
   <p><a> <img height="175" src="imgs/jmja.jpg"> </a>
      <a> <img height="175" src="imgs/hdf.jpg"> </a>
      <a> <img height="175" src="imgs/jvrn.jpg"> </a>
-     <a href="https://www.amazon.com/Mathematical-Games-Abstract-Joao-Pedro/dp/0486499901" target="_blank"> 
-         <img height="175" src="imgs/dover.jpg"> 
+     <a href="https://www.amazon.com/Mathematical-Games-Abstract-Joao-Pedro/dp/0486499901" target="_blank">  <img height="175" src="imgs/dover.jpg"> 
      </a>
      <a> <img height="175" src="imgs/paed.jpg"> </a>
      <a> <img height="175" src="imgs/tc.jpg"> </a></p>
@@ -259,6 +254,7 @@ Coding chops:
 
 <div class="entry">
   <h4>Topics in Python</h4>
+  
   <p>Jupyter <a target="_blank" href="https://github.com/jpneto/topicsInPython">notebooks</a> that range from Statistics and Mathematics to Programming, including:</p>
   
   <p><a target="_blank" href="https://colab.research.google.com/github/jpneto/topicsInPython/blob/main/notebooks/Resampling.ipynb">
@@ -301,17 +297,9 @@ Resampling</a> - notes about permutation tests to estimate answers to probabilit
      <a target="_blank" href="http://jpneto.github.io/r/EM/EM.html">Expectation-Maximization</a>,
      <a target="_blank" href="http://jpneto.github.io/r/PRML/chapter4.4.html">Laplace Approximation</a>,
      <a target="_blank" href="http://jpneto.github.io/r/ECS/index.html">Statistical Computation and Simulation</a>,
-     <a target="_blank" href="http://jpneto.github.io/r/variational_inference/variational.html">Variational Inference</a>.
+     <a target="_blank" href="http://jpneto.github.io/r/variational_inference/variational.html">Variational Inference</a>.</p>
 </div>
 
-<hr> 
-
-<div class="entry"><br></div>
-
-    <!-- Optional JavaScript -->
-    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
-    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.11.0/umd/popper.min.js"></script>
-    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta/js/bootstrap.min.js"></script>
-  </body>
+</div> <!-- container -->
+</body>
 </html>
